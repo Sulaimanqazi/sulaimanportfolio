@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="button1" onclick="window.location.href='aboutme.html'">About Me</button>
+    <button class="button2" onclick="window.location.href='jobreadiness.html'">Job Readiness</button>
+    <button class="button3" onclick="window.location.href='careerlifeplanning.html'">Career/Life Planning</button>
+    <button class="button4" onclick="window.location.href='reflection.html'">Reflection</button>
+
+    <img src="igif.gif">
+    
+</body>
+<style>
+    @font-face {
+        font-family: 'cBold'; /*a name to be used later*/
+        src: url('https://encore.scdn.co/fonts/CircularSp-Book-4eaffdf96f4c6f984686e93d5d9cb325.woff2') format('woff2'); /*URL to font*/
+    }
+    body {
+        background-image: url('ibg.png');
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    img {
+        max-width: 20%; /* Adjust the percentage as needed */
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+    button{
+        font-family: 'cBold';
+        font-size: 20px;
+        background-color: rgb(73, 113, 243);
+        border-color: #50d5cd;
+        color: rgb(212, 255, 246);
+    }
+    .button1{
+        position:absolute;
+       height: 8%;
+       width: 25%;
+       left: 0%;
+       bottom: 92%;
+    }
+
+    .button2{
+        position:absolute;
+        height:8%;
+       width: 25%; 
+       left: 25%;
+       bottom: 92%;
+    }
+    .button3{
+        position:absolute;
+        height:8%;
+       width: 25%; 
+       left: 50%;
+       bottom: 92%;
+    }
+    .button4{
+        position:absolute;
+        height:8%;
+       width: 25%; 
+       left: 75%;
+       bottom: 92%;
+    }
+</style>
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        const handleResize = () => {
+            if (window.innerWidth <= 1800 && window.innerHeight <= 800) {
+                document.body.style.zoom = '80%;'
+            } else {
+                document.body.style.zoom = '100%;'
+            }
+        };
+
+        window.addEventListener('resize', handleResize);
+        handleResize();
+    })
+</script>
+</html>

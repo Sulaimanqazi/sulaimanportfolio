@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="button1" onclick="window.location.href='index.html'">Home</button>
+    <button class="button2" onclick="window.location.href='aboutme.html'">About Me</button>
+    <button class="button3" onclick="window.location.href='careerlifeplanning.html'">Career/Life Planning</button>
+    <button class="button4" onclick="window.location.href='reflection.html'">Reflection</button>
+
+    <h1 class="title" id="title" >Job Readiness</h1>
+    <h1 class="one" id="one" >My Resume</h1>
+    <img class="two" id="two" src="resume.jpg">
+    <a href="SulaimanQaziResume.pdf" download="SulaimanQaziResume.pdf">
+        <button class="button5" id="button5">Download Resume!</button>
+    </a>
+    <h1 class="three" id="three">My Cover Letter</h1>
+    <img class="four" id="four" src="CoverLetterSulaimanQazi.jpg">
+    <a href="CoverLetterSulaimanQazi.pdf" download="CoverLetterSulaimanQazi.pdf">
+        <button class="button6" id="button6">Download Cover Letter!</button>
+    </a>
+    <h1 class="tips" id="tips">Job Interview Tips</h1>
+    <h1 class ="content" id="content">1. When asked about your skills that relate to the job, use the STAR method. Set the scene, explain the task, tell your action, and then share the result
+        <br>2. When asked about your weaknesses, never choose a weakness central to the job
+        <br>3. Arrive to the interview 10 minutes early
+        <br>4. Prepare for the interview by researching common interview questions, and listing five questions to ask the interviewer about the job
+        <br>5. Write an interview thank-you letter, reminding the interviewer of your qualities after the interview</h1>
+    <h3>‎</h3>
+</body>
+<style>
+        body {
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+@font-face {
+        font-family: 'cBold'; /*a name to be used later*/
+        src: url('https://encore.scdn.co/fonts/CircularSp-Book-4eaffdf96f4c6f984686e93d5d9cb325.woff2') format('woff2'); /*URL to font*/
+        src: url('https://encore.scdn.co/fonts/CircularSp-Book-4eaffdf96f4c6f984686e93d5d9cb325.woff2') format('woff2'); /*URL to font*/
+
+    }
+    h1{
+        font-size: 80px;
+        font-family: 'cBold', Arial, Helvetica, sans-serif;
+
+    
+    }
+    h3{
+        position:absolute;
+
+        font-size: 40px;
+        font-family: 'cBold';
+        font-weight: 10;
+        width: 75%;
+        left: 12.5%;
+    }
+    button{
+        font-family: 'cBold';
+        font-size: 20px;
+        background-color: rgb(73, 113, 243);
+        border-color: #50d5cd;
+        color: rgb(212, 255, 246);
+    }
+    .button1{
+        position:absolute;
+       height: 8%;
+       width: 25%;
+       left: 0%;
+       bottom: 92%;
+    }
+
+    .button2{
+        position:absolute;
+        height:8%;
+       width: 25%; 
+       left: 25%;
+       bottom: 92%;
+    }
+    .button3{
+        position:absolute;
+        height:8%;
+       width: 25%; 
+       left: 50%;
+       bottom: 92%;
+    }
+    .button4{
+        position:absolute;
+        height:8%;
+       width: 25%; 
+       left: 75%;
+       bottom: 92%;
+    }
+    .title{
+        position:absolute;
+
+       top:5%;
+        left:35%;
+    text-align: center;
+
+
+    }
+    .tips{
+        position:absolute;
+
+top:350%;
+ left:30%;
+text-align: center;  
+    }
+    .content{
+        position:absolute;
+font-size: 60px;
+top:365%;
+width:80%;
+ left:8%;
+text-align: center;  
+    }
+    .one{
+        position:absolute;
+        font-size: 20px;
+        top:6%;
+        left:40%;
+        text-align: center;
+
+    }
+
+.two{
+    position:absolute;
+
+    height: 100;
+    max-width: 40%; /* Adjust the percentage as needed */
+    top:40%;
+    left:28.5%;
+    height: auto;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 8);;
+
+}
+.button5{
+    position:absolute;
+    top:160%;
+    transform: scale(3.5);
+    left:44%;
+    display: flex;
+    height: auto;
+    size:900%;
+    border-radius: 100px;
+}
+.one{
+        position:absolute;
+        font-size: 60px;
+top:20%;
+left:40%;
+text-align: center;
+
+    }
+    .three{
+        position:absolute;
+        top:170%;
+    }
+    .four{
+        position:absolute;
+
+height: 100;
+max-width: 40%; /* Adjust the percentage as needed */
+top:200%;
+left:28.5%;
+height: auto;
+display: flex;
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 8);;
+    }
+    .button6{
+        position:absolute;
+    top:320%;
+    transform: scale(3.5);
+    left:42%;
+    display: flex;
+    height: auto;
+    size:900%;
+    border-radius: 100px;
+    }
+    h3{
+        position:absolute;
+        top:500%;
+    }
+</style>
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        const handleResize = () => {
+            if (window.innerWidth <= 1800 && window.innerHeight <= 800) {
+                document.body.style.zoom = '80%;'
+            } else {
+                document.body.style.zoom = '100%;'
+            }
+        };
+
+        window.addEventListener('resize', handleResize);
+        handleResize();
+    })
+</script>
+</html>
